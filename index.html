@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustka.pl - Anarchy Minecraft Server</title>
+  <style>
+    /* Stylizacja całej strony w klimacie Pustka.pl */
+    body {
+      background-color: #0d0a12;
+      color: #e0d5f0;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      text-align: center;
+    }
+
+    /* Główny kontener strony */
+    .container {
+      max-width: 600px;
+      background-color: #140e1f;
+      border: 4px solid #6b2fa1;
+      padding: 30px;
+      box-shadow: 0 0 20px #4a1570;
+    }
+
+    h1 {
+      color: #a855f7;
+      font-size: 2.5rem;
+      text-shadow: 3px 3px #2d0b4d;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #bfa8db;
+    }
+
+    /* Przycisk IP */
+    .ip-box {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #000000;
+      border: 2px dashed #8b5cf6;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #d8b4fe;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .ip-box:hover {
+      background-color: #2e1065;
+      border-color: #c084fc;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>PUSTKA.PL</h1>
+    <p>Surowy świat Anarchy bez zbędnych zasad. Zbuduj swoją potęgę lub zostań wciągnięty przez Pustkę.</p>
+
+    <!-- Przycisk z IP -->
+    <div class="ip-box" onclick="copyIP()">
+      IP: PUSTKA.PL
+    </div>
+    <p style="font-size: 0.8rem; margin-top: 8px;">(Kliknij, aby skopiować IP)</p>
+  </div>
+
+  <div class="footer">
+    &copy; Pustka.pl - Minecraft Anarchy Server
+  </div>
+
+  <script>
+    // Skrypt do automatycznego kopiowania IP po kliknięciu
+    function copyIP() {
+      navigator.clipboard.writeText("pustka.pl");
+      alert("Skopiowano IP serwera: pustka.pl");
+    }
+  </script>
+
+</body>
+</html>
